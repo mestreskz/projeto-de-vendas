@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --red-esp:#e40044;
+    --white-esp:#ffffff;
+    --blue-esp:#4b5fa0;
+    --blue-mediun:#0050c3;
+    --blue-dark:#171e43;
+    --grey-light:#ecebec;
+    --black-esp:#000;
+    --white-line:#706a6a;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#top{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--red-esp);
+    color: var(--white-esp);
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
+}
+#logo{
+    width: 100%;
+    height: 15rem;
+    background-color: var(--black-esp);
+    display: flex;
+    flex-direction: column;
+}
+#search_logo_car{
+    width: 100%;
+    height: 60%;
+    border-bottom: 0.1rem solid var(--white-line);
+}
+#nav_bar{
+    width: 100%;
+    height: 40%;
+    border-bottom: 0.1rem solid var(--white-line)
+}
