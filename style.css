@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 :root{
-    --red-esp:#e40044;
+    --purple-esp:#2e0448;
     --white-esp:#ffffff;
     --blue-esp:#4b5fa0;
     --blue-mediun:#0050c3;
@@ -13,35 +13,167 @@
     --grey-light:#ecebec;
     --black-esp:#000;
     --white-line:#706a6a;
+    --red-esp:#e40044;
 }
 body{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
-#top{
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+}
+#topo{
     width: 100%;
-    height: 3rem;
-    background-color: var(--red-esp);
+    height: 40px;
+    background-image: linear-gradient(#2e0448,#e40044);
     color: var(--white-esp);
+    font-size: 12px;
     font-weight: 700;
     text-align: center;
-    line-height: 3rem;
+    line-height: 40px;
 }
 #logo{
     width: 100%;
     height: 15rem;
-    background-color: var(--black-esp);
+    background-color:rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
 }
-#search_logo_car{
+#pesquisa_logo_usuario{
     width: 100%;
     height: 60%;
-    border-bottom: 0.1rem solid var(--white-line);
+    border-bottom: 0.1rem solid rgb(66, 64, 64);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-#nav_bar{
+#pesquisa{
+    width: 33.3%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#entrada_pesquisa{
+    height: 35px;
+    width: 200px;
+    text-align: center;
+    border: 0.5px solid #ffffff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#butao_pesquisa{
+    width: 30px;
+    height: 35px;
+    background-color: #fc0d55;
+    border: #fc0d55;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+#logo_sp{
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+}
+#logo_s_paulo,#logo_dragao{
+    width: 12rem;
+    height: 7rem;
+}
+#usuario_carrinho{
+    width: 33.3%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.p_u_c{
+    width: 1.5rem;
+}
+#barra_navegacao{
     width: 100%;
-    height: 40%;
-    border-bottom: 0.1rem solid var(--white-line)
+    height: 70px;
+    border-bottom: 0.1rem solid  rgb(66, 64, 64);
+}
+#lista{
+    list-style-type: none;
+    line-height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#items_underline{
+    color: #ffffff;
+    text-decoration: underline;
+}
+#icone_seta{
+    width: 10px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.items{
+    color: #ffffff;
+}
+#items_venda{
+    color: #e40044;
+}
+#banner{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+#banner_computador{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#banner_head_set{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#imagem_computador{
+    width: 100%;
+    height: 400px;
+}
+#imagem_teclado_fone{
+    width: 100%;
+    height: 400px;
+}
+#banner_comum_1, #banner_comum_2{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#banner_comum_1{
+    position: absolute;
+    top: 180px;
+    left: 200px;
+}
+#banner_comum_2{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+}
+#para_banner_1, #para_banner_2{
+    font-size: 13px;
+}
+#imagem_computador:hover{
+    width: 101%;
+    transition: 0.5s;
+}
+#imagem_teclado_fone:hover{
+    width: 101%;
+    transition: 0.5s;
 }
